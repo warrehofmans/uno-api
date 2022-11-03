@@ -22,7 +22,9 @@ public class Rules implements IRules {
     }
 
     private boolean canColorBePlayed(Card card1, Card card2) {
-        return card1.getColor() == Color.WILDCARD || card1.getColor() == card2.getColor();
+        return card2
+                .getColor() == Color.WILDCARD || card1.getColor() == Color.WILDCARD
+                || card1.getColor() == card2.getColor();
     }
 
     private boolean canNumberBePlayed(Card card1, Card card2) {
