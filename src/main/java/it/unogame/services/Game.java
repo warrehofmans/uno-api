@@ -32,7 +32,7 @@ public class Game {
 
     public void removeCard(Card card) {
         Card removedCard = this.deck.stream()
-                .filter(c -> c.getColor() == card.getColor() && c.getNumber() == c.getNumber()).toList().get(0);
+                .filter(c -> c.getColor() == card.getColor() && c.getNumber() == card.getNumber()).toList().get(0);
         this.deck.remove(removedCard);
     }
 
